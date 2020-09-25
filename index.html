@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"type="text/css" href="style.css">
+</head>
+<body>
+    <div class="banner-text">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Details</li>
+        </ul>
+        <h2>Welcome to our Website</h2>
+    </div>
+    <form onsubmit="return validate()">
+    <div class="container">
+        <div class="toggle">
+            <span>Click here</span>
+        </div>
+        <h2>Contact form</h2>
+        <div class="input">
+            <input type="text" placeholder="name" id="name">
+        </div>
+        <div class="password">
+            <input type="password" placeholder="password" id="password">
+        </div>
+        <div class="email">
+            <input type="email" placeholder="someone@gmail.com" id="email">
+        </div>
+        <textarea placeholder="Message"></textarea>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+    </form>
+    <div class="animation-area">
+        <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <script src="jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+           $('.toggle').click(function(){
+              // $('.container').toggleClass('show')
+              $('.container').animate({
+                  opacity:'1',
+              },1000);
+           });
+          // $('.btn1').click(function(){
+               //$('.container').fadeOut();
+           //});
+       });
+    </script>
+</body>
+</html>
